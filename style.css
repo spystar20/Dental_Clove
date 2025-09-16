@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #000;
+    width: 100%;
+    height: 100vh;
+}
+.hero-section{
+    display: flex ;
+    width: 100%;
+}
+.hero-section-col-1{
+display: flex;
+width: 60vw;
+height: 100vh;
+background-image: url('Assests/d9e2eb1945ffd93ea40450c1db6dd1c7d2b70f19.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+filter: blur(3px);
+}
