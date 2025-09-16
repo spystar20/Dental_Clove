@@ -1,23 +1,174 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background: #000;
+    font-family: "Figtree", sans-serif;
     width: 100%;
     height: 100vh;
 }
-.hero-section{
-    display: flex ;
+
+.hero-section {
+    display: flex;
     width: 100%;
 }
-.hero-section-col-1{
+
+.hero-section-col-1 {
+    display: flex;
+    width: 65vw;
+    height: 100vh;
+    background-image: url('Assests/d9e2eb1945ffd93ea40450c1db6dd1c7d2b70f19.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(1rem);
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.text-col-gradient {
+    width: 50vw;
+    height: 25%;
+background: #FFF;
+background: linear-gradient(transparent 100%, transparent 0%);
+backdrop-filter: blur(10rem);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    padding-left: 1rem;
+    padding-top: 1.1rem ;
+    padding-bottom: 1.1rem;
+
+}
+
+.text-col-gradient h3 {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.text-col-gradient h6 {
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+
+.text-col-gradient button {
+    outline: none;
+    border: none;
+    padding: 0.5rem 0.9rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border: #DE6F0D;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #F8943F;
+}
+.hero-section-col-1-left-col img{
+transform: rotateY(180deg);
+    position: absolute;
+    width: 39vw;
+    bottom:-18.6rem;
+    right: -9rem;
+}
+.hero-section-col-1-left-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+position: relative;
+}
+.hero-section-col-2{
+    background-color: #FFF9F4;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.33rem;
+    gap: 2rem;
+}
+.form-heading {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+
+}
+.form-heading h3{
+      font-weight: 600;
+    font-size: 0.9rem;
+
+}
+.form-heading p{
+      font-weight: 400;
+}
+
+input{
+border-color: #FFE0C4;
+border-radius: 2rem;
+outline: none;
+padding: 0.6rem;
+padding-left: 1rem;
+
+}
+input:placeholder-shown{
+    color: #777777;
+    font-size: larger;
+    text-transform: capitalize;
+}
+
+.captcha{
 display: flex;
-width: 60vw;
-height: 100vh;
-background-image: url('Assests/d9e2eb1945ffd93ea40450c1db6dd1c7d2b70f19.jpg');
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-filter: blur(3px);
+flex-direction: row;
+justify-content: center;
+
+}
+
+#Captcha{
+border-radius:2rem 0rem 0rem 2rem ;
+}
+.captcha span{
+    
+ background-color: #462512;
+ color: white;
+ font-size: larger;
+ padding: 1rem;
+ border-radius:0rem 2rem 2rem 0rem ;
+
+}
+.checkbox-div{
+    
+}
+form button{
+    
+    outline: none;
+    border: none;
+    padding: 0.9rem 0.9rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border: #DE6F0D;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #F8943F;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 1.5rem;
 }
