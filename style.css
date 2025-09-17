@@ -144,10 +144,10 @@ position: relative;
 }
 
 input{
-border-color: #FFE0C4;
+border: 2px solid #FFE0C4;
 border-radius: 2rem;
 outline: none;
-padding: 0.6rem;
+padding: 1rem;
 padding-left: 1rem;
 
 }
@@ -156,19 +156,30 @@ input:placeholder-shown{
     font-size: larger;
     text-transform: capitalize;
 }
-
+input::placeholder{
+    font-size: large;
+}
 .captcha{
 display: flex;
 flex-direction: row;
-justify-content: center;
+align-items: center;
 
 }
 
 #Captcha{
 border-radius:2rem 0rem 0rem 2rem ;
+flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 2rem 0 0 2rem;
+  padding: 1rem;
+padding-left: 1rem;
+  font-size: 1rem;
+  outline: none;
+  border: 2px solid #FFE0C4;
+
+
 }
 .captcha span{
-    
  background-color: #462512;
  color: white;
  font-size: larger;
@@ -179,6 +190,25 @@ border-radius:2rem 0rem 0rem 2rem ;
 .checkbox-div{
     
 }
+.checkbox-div {
+  display: flex;
+  align-items: flex-start; 
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+  width: 100%;           
+}
+
+.checkbox-div input[type="checkbox"] {
+  margin-top: 2px;     
+  cursor: pointer;
+}
+
+.checkbox-div label {
+  cursor: pointer;
+}
+
 form button{
     
     outline: none;
@@ -239,32 +269,34 @@ color: #F8943F;
     font-weight: 600;
   
 }
-.types-section{
+.section{
 width: 100%;
 display: flex;
 flex-direction: column;
-  padding: 2rem 1rem;
+  padding: 4rem 1rem;
   justify-content: center;
   align-items: center;
 }
-.type-section-heading{
+.section-heading{
     display: flex;
     flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 4px;
 }
-.type-section-heading h1{
+.section-heading h1{
 font-size: 1.8rem;
 font-weight: 700;
 }
-.type-section-heading p{
+.section-heading p{
     font-weight: 400;
 color: #474747;
 }
 .type-box{
     display: flex;
     flex-direction: row;
+     flex: 1 1 45%;       
+    max-width: 550px;  
     gap: 8px;
     border: 2px solid #FFE0C4;
     border-radius: 1.5rem;
@@ -273,12 +305,12 @@ color: #474747;
 }
 .type-box:hover{
     background-color: #FFE0C4;
-    transform: translateY(-30px);
+    transform: translateY(-10px);
     transition: all 0.4s ease-in-out;
     
 }
 .type-box img{
-    width:20vw;
+    width:40%;
     height: auto;
     object-fit: cover;
     border-radius: 1rem 0rem 0rem 1rem;
@@ -332,7 +364,8 @@ color: #474747;
     flex-direction: column;
     gap:2rem;
     width: 100%;
-    padding: 1rem 2rem;
+        flex-grow: 1;       
+ padding:0.5rem 2rem;
 }
 .type-price{
     display: flex;
@@ -347,10 +380,39 @@ color: #474747;
     font-size: 1.5rem;
 }
 .types{
-    padding: 0.4rem 2rem;
-    margin-top: 4rem;
-    display:flex;
-    gap: 1rem;
+  display: flex;
+    flex-wrap: wrap;       
+    gap: 2rem;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;  
+    margin-top: 3rem;}
+
+.Transformations-box{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 15px; 
+padding: 20px;
+width: 100%;
+}
+.Transformations img{
+    max-width: 300px;
+    border-radius: 13px;
+    width: 100%;
+}
+.img-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 1rem;
+    color: black;
+}
+.img-info span:nth-child(2){
+    color: #F58420;
+}
+.img-box{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
 }
