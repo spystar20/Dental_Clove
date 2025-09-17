@@ -187,9 +187,7 @@ padding-left: 1rem;
  border-radius:0rem 2rem 2rem 0rem ;
 
 }
-.checkbox-div{
-    
-}
+
 .checkbox-div {
   display: flex;
   align-items: flex-start; 
@@ -274,6 +272,7 @@ width: 100%;
 display: flex;
 flex-direction: column;
   padding: 4rem 1rem;
+  gap:3.5rem;
   justify-content: center;
   align-items: center;
 }
@@ -391,6 +390,8 @@ color: #474747;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
+justify-content: center;
+align-items: center;
 gap: 15px; 
 padding: 20px;
 width: 100%;
@@ -415,4 +416,310 @@ width: 100%;
     display: flex;
     flex-direction: column;
     gap: 9px;
+}
+.accordBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap:3rem;
+}
+.accord{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.accord-div {
+    width: 100%;
+    display: flex ;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordBox-img img{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 2rem;
+}
+.accord-div p{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.patients-box{
+    display: flex;
+    flex-direction: column;
+
+}
+.patients-img img{
+max-width: 190px;
+border-radius: 1rem;
+}
+.patients-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 600;
+   font-size: 1rem;
+}
+.patients-name{
+    display: flex;
+    flex-direction: column;
+   color: black;
+   font-weight: 600;
+   font-size: 1rem;
+}
+.patients-name span:nth-child(2){
+color: #777777;
+
+}
+.patients-work{
+    color: #F58420;
+}
+.patients{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.form{
+background-color: #FFF9F4;
+padding: 1rem;
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+}
+#name , #phone, .captcha{
+    display:flex;
+width: 100%;
+}
+.btn-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+.btn-div button{
+    width: 25%;
+    display: flex;
+}
+.checkbox{
+display: flex;
+  align-items: flex-start; 
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}
+.Policy{
+    text-decoration: underline;
+}
+.form h2{
+    color: #303030;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+}
+.safety-box{
+       height:28vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    background-color: #112230;
+    padding: 1rem;
+    color: white;
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  visibility: hidden;
+}
+.safety-box:hover{
+    background-color: #462512;
+    transition: all 0.6s ease-in-out;
+}
+
+.safety-box-heading-1{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10px;
+font-size: 1rem;
+}
+.safety-box-heading-1 h2{
+padding-right: 1rem;
+text-align: left;
+}
+.safety-box p{
+    color: #FFFFFF;
+    font-weight: 50;
+width: 70%;
+    text-align: left;
+    margin-top: 0.5rem;
+}
+.safety-div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.safety-div:hover .safety-box{
+    visibility: visible;
+    transform: translateY(-10px);
+    transition: all 0.4s ease-in;
+}
+.safety-img img{
+    max-width: 500px;
+    border-radius: 1rem;
+}
+.safety-img{
+grid-row: 1 / 1;
+    grid-column: 1 / 1;
+    padding: 1rem 0rem 7rem 0rem;
+}
+.learn-more{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    margin-top: 2rem;
+}
+.safety-section{
+    display: flex;
+}
+.reviews-section{
+    background-color: #FFF9F5;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.reviews-section h2{
+    text-align: center;
+    padding: 2rem;
+}
+.reviews{
+    display: flex;
+    gap: 10px;
+    padding-left: 5rem;
+}
+.reviews-section-div{
+    display: flex;
+}
+.reviews-div{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+ gap: 10px;
+}
+.reviews-img img{
+border-radius: 100rem;
+width: 80px;
+height: 80px;
+}
+.reviews-div h4{
+    font-weight: 600;
+}
+
+.reviews-google{
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color:#FFEBC4;
+    border-radius: 0rem 1rem 0rem 5rem;
+    padding: 1rem;
+}
+.reviews-google img{
+    max-width: 30px;
+}
+
+.reviews-box{
+    position: relative;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.google-section{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; gap: 15px;
+    border-right: 2px solid #FFE7D2;
+    padding-left: 1rrem;
+}
+.google-img img{
+    max-width: 600px;
+}
+.rating-div{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    gap: 15px;
+}
+.google-section h6{
+    color:#EA7D28;
+    font-size: 1.4rem;
+}
+.google-section p{
+    color: #474747;
+}
+/* .rating-div span:nth-child(1){
+border: 1px solid #FFE7D2;
+} */
+
+.city{
+   display: flex; 
+gap: 10px;
+justify-content: center;
+align-items: center;
+border: 2px solid #D0D0D0;
+padding: 0.5rem 1rem;
+border-radius: 0.5rem;
+color: #303030;
+}
+.city:hover{
+    transform: translateY(-2px);
+    transition: all 0.4s ease-out;
+}
+.city-info{
+    display: flex ;
+    flex-direction: column;
+    gap: 3px;
+    font-weight: 700;
+    
+}
+.city-info span:nth-child(2){
+    font-weight: 600;
+}
+.cities-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px ;
+}
+.clinic-grid{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap:1rem ;
+}
+.clinic-grid img{
+    max-width: 250px;
+    border-radius:0.5rem;
+    border: 2px solid #B0B0B0;
+}
+.grids{
+    display: flex;
+    gap: 3rem;
 }
